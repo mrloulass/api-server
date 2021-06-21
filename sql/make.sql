@@ -1,0 +1,5 @@
+CREATE TABLE Make (
+  id     INT PRIMARY KEY,
+  name   VARCHAR(255) NOT NULL,
+  carId  INT REFERENCES Car(id),
+)
